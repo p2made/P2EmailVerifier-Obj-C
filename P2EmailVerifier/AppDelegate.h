@@ -1,5 +1,5 @@
 //
-//  P2ViewController.h
+//  AppDelegate.h
 //
 //  Created by Pedro Plowman on 2013-06-24.
 //
@@ -28,11 +28,8 @@
 
 #import <UIKit/UIKit.h>
 
-#import "P2EmailVerifier.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@interface P2ViewController : UIViewController <P2EmailVerifierDelegate>
-
-- (IBAction)tappedValidatePatternButton:(id)sender;
-- (IBAction)tappedVerifyAddressButton:(id)sender;
+@property (strong, nonatomic) UIWindow *window;
 
 @end

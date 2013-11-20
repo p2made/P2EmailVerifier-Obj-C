@@ -1,20 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--View Controller-->
+        <scene sceneID="5">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="P2ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <viewController id="2" customClass="P2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ub7-rJ-9qN"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vni-w5-VsY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email address to verify" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMU-LH-s6F">
+                                <rect key="frame" x="20" y="135" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rp0-oy-UVC">
+                                <rect key="frame" x="20" y="186" width="136" height="30"/>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="GtD-ye-EUY"/>
+                                </constraints>
+                                <state key="normal" title="Validate Pattern">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedValidatePatternButton:" destination="2" eventType="touchUpInside" id="gae-XR-GES"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tJ8-WZ-GtC">
+                                <rect key="frame" x="164" y="197" width="136" height="8"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgL-Ej-uWK">
+                                <rect key="frame" x="20" y="237" width="280" height="30"/>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Verify Address">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedVerifyAddressButton:" destination="2" eventType="touchUpInside" id="V8q-0y-hzU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="vbQ-cH-7K7">
+                                <rect key="frame" x="20" y="275" width="280" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RnM-Hv-gyM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8W-eb-GWA">
+                                <rect key="frame" x="20" y="323" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XXX-Sw-2Is"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rp0-oy-UVC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="29Z-z2-TRm"/>
+                            <constraint firstAttribute="bottom" secondItem="Rp0-oy-UVC" secondAttribute="bottom" constant="352" id="3UX-so-l2S"/>
+                            <constraint firstItem="tJ8-WZ-GtC" firstAttribute="leading" secondItem="Rp0-oy-UVC" secondAttribute="trailing" constant="8" symbolic="YES" id="4sf-O2-8L9"/>
+                            <constraint firstAttribute="bottom" secondItem="rMU-LH-s6F" secondAttribute="bottom" constant="403" id="6el-t6-flJ"/>
+                            <constraint firstItem="h8W-eb-GWA" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="8xG-2Q-Euw"/>
+                            <constraint firstAttribute="bottom" secondItem="PgL-Ej-uWK" secondAttribute="bottom" constant="301" id="E4v-Dk-Afl"/>
+                            <constraint firstAttribute="trailing" secondItem="h8W-eb-GWA" secondAttribute="trailing" constant="20" symbolic="YES" id="JVp-Ru-eCV"/>
+                            <constraint firstItem="PgL-Ej-uWK" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="KKP-sO-WUN"/>
+                            <constraint firstItem="tJ8-WZ-GtC" firstAttribute="centerY" secondItem="Rp0-oy-UVC" secondAttribute="centerY" id="Mi2-fA-ktw"/>
+                            <constraint firstAttribute="trailing" secondItem="PgL-Ej-uWK" secondAttribute="trailing" constant="20" symbolic="YES" id="QaB-kU-TK0"/>
+                            <constraint firstItem="vbQ-cH-7K7" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="UHY-Qe-hJM"/>
+                            <constraint firstAttribute="trailing" secondItem="rMU-LH-s6F" secondAttribute="trailing" constant="20" symbolic="YES" id="VFh-DV-aK2"/>
+                            <constraint firstAttribute="trailing" secondItem="tJ8-WZ-GtC" secondAttribute="trailing" constant="20" symbolic="YES" id="W49-Rh-7Mj"/>
+                            <constraint firstAttribute="bottom" secondItem="tJ8-WZ-GtC" secondAttribute="bottom" constant="363" id="YL2-XM-8Kp"/>
+                            <constraint firstItem="rMU-LH-s6F" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="e5X-DM-cde"/>
+                            <constraint firstAttribute="trailing" secondItem="vbQ-cH-7K7" secondAttribute="trailing" constant="20" symbolic="YES" id="iNq-vT-eXP"/>
+                            <constraint firstAttribute="bottom" secondItem="vbQ-cH-7K7" secondAttribute="bottom" constant="253" id="inP-nX-Jwz"/>
+                            <constraint firstAttribute="bottom" secondItem="h8W-eb-GWA" secondAttribute="bottom" constant="224" id="yqB-ER-sNg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="boolResult" destination="h8W-eb-GWA" id="dLc-uz-AME"/>
+                        <outlet property="email" destination="rMU-LH-s6F" id="cMl-HC-QIS"/>
+                        <outlet property="enumResult" destination="vbQ-cH-7K7" id="JWg-ah-Xrs"/>
+                        <outlet property="patternResult" destination="tJ8-WZ-GtC" id="fVa-0h-gXc"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
