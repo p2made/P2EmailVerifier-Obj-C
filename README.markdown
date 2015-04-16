@@ -1,6 +1,7 @@
 #P2EmailVerifier - Objective C version
 
 A simple Objective C wrapper to the verify-email.org API. 
+
 NOTE: This project won't be updated as I am converting all my Objective C code to Swift code.
 
 ##Instalation 
