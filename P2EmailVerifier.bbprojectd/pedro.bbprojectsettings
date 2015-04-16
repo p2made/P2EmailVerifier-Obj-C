@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EmbeddedEditorHidden:pedro</key>
+	<false/>
+	<key>ExpandedEditorWidth:pedro:displays([(0, 0), (1920, 1080)])</key>
+	<integer>917</integer>
+	<key>ExpandedItems:pedro</key>
+	<array>
+		<string>B570C315-0B56-4805-B3CE-BCC2D9C88C24</string>
+		<string>9788C936-19FF-42D2-AE75-73E997A5C9FE</string>
+	</array>
+	<key>FileFilterID:pedro</key>
+	<string>msng</string>
+	<key>OpenDocuments:pedro</key>
+	<array/>
+	<key>ShowInvisibles:pedro</key>
+	<false/>
+	<key>ShowSCMData:pedro</key>
+	<false/>
+	<key>TextFilesOnly:pedro</key>
+	<true/>
+	<key>ToolbarVisible:pedro</key>
+	<true/>
+	<key>ViewSplitterPosition:pedro</key>
+	<real>0.19631901383399963</real>
+	<key>WindowFrame:pedro:displays([(0, 0), (1920, 1080)])</key>
+	<string>rect(44,0,1076,1141)</string>
+</dict>
+</plist>
